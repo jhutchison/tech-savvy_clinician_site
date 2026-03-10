@@ -1,4 +1,4 @@
-import { tagline, companyName } from "@/lib/constants";
+import { tagline, companyName } from "@/lib/strings/strings";
 
 export default function Home() {
   return (

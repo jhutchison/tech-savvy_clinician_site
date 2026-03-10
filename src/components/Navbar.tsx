@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { companyName, primaryColor } from "@/lib/constants";
+import { companyName } from "@/lib/strings/strings";
+import { primaryColor } from "@/lib/other_constants/colors";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

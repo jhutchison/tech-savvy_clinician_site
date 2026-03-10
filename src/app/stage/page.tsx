@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { tagline, primaryColor } from "@/lib/constants";
+import { tagline } from "@/lib/strings/strings";
+import { primaryColor } from "@/lib/other_constants/colors";
 
 export default function Home() {
   return (

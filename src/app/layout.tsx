@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { tagline, companyName } from "@/lib/constants";
+import { tagline, companyName } from "@/lib/strings/strings";
 import "./globals.css";
 
 export const metadata: Metadata = {

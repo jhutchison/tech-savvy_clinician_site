@@ -1,4 +1,5 @@
-import { companyName, primaryColor } from "@/lib/constants";
+import { companyName } from "@/lib/strings/strings";
+import { primaryColor } from "@/lib/other_constants/colors";
 
 export default function Footer() {
   return (
