@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Tech Savvy Clinician</h3>
+            <h3 className="text-lg font-semibold mb-4">The Tech Savvy Clinician</h3>
             <p className="text-gray-400">
               Helping clinicians leverage technology for better patient outcomes.
             </p>

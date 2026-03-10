@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/stage" className="text-xl font-bold text-gray-800">
-              Tech Savvy Clinician
+              The Tech Savvy Clinician
             </Link>
           </div>
           
