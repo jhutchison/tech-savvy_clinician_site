@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { tagline } from "@/lib/constants";
+import { tagline, companyName } from "@/lib/constants";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tech Savvy Clinician",
+  title: companyName,
   description: tagline,
 };
 
