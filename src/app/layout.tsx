@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { tagline } from "@/lib/constants";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Tech Savvy Clinician",
-  description: "Empowering clinicians with technology",
+  description: tagline,
 };
 
 export default function RootLayout({
