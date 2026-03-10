@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { companyName } from "@/lib/constants";
+import { companyName, primaryColor } from "@/lib/constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ export default function Navbar() {
             <Link href="/stage/services" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
               Services
             </Link>
-            <Link href="/stage/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+            <Link href="/stage/contact" className={`${primaryColor} hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors`}>
               Request Consultation
             </Link>
           </div>

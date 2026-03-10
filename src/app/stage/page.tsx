@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { tagline } from "@/lib/constants";
+import { tagline, primaryColor } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-blue-600 text-white py-20 px-4 sm:px-6 lg:px-8">
+        <section className={`${primaryColor} text-white py-20 px-4 sm:px-6 lg:px-8`}>
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               {tagline}
@@ -20,7 +20,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a 
                 href="/stage/contact" 
-                className="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors"
+                className={`bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors`}
               >
                 Request a Consultation
               </a>

@@ -1,4 +1,4 @@
-import { companyName } from "@/lib/constants";
+import { companyName, primaryColor } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -33,7 +33,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="bg-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors"
+                className={`${primaryColor} px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors`}
               >
                 Join
               </button>
