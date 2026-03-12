@@ -16,7 +16,7 @@ export default function Home() {
               {tagline}
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              We help healthcare professionals integrate cutting-edge tech into their practice for better efficiency and patient care.
+              some random text here.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a 
