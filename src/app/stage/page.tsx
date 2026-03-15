@@ -12,7 +12,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className={`my-8 
         rounded-full 
-        bg-linear-to-r from-yellow-300 to-purple-600 via-orange-600
+        bg-linear-to-r from-gray-200 to-purple-600
           text-white 
           py-20 px-4 sm:px-6 lg:px-8 
           border border-gray-500`}>
