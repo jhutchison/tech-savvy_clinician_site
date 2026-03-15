@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 import { companyName, tagline, aboutUsText } from "@/lib/strings/strings";
 import { primaryColor } from "@/lib/other_constants/colors";
 
@@ -34,13 +35,16 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Feature 1 */}
-              <button className="bg-sky-500/80 p-6 rounded-lg border text-white">
-             
-                <span className="text-xl font-semibold mb-2">  Fill out our 2 Minute Survey!</span>
-              </button>
+              <Link
+                id="fill-out-survey"
+                href="/survey"
+                className="bg-sky-500/80 p-6 rounded-lg border text-white block text-center"
+              >
+                <span className="text-xl font-semibold mb-2">Fill out our 2 Minute Survey!</span>
+              </Link>
 
               {/* Feature 2 */}
-              <button className="bg-sky-500/80 text-white p-6 rounded-lg border border-blue-500">
+              <button id="join-mailing-list" className="bg-sky-500/80 text-white p-6 rounded-lg border border-blue-500">
               
                 <span className="text-xl font-semibold mb-2">Join our Mailing List!</span>
               </button>
