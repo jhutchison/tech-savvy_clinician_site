@@ -12,10 +12,9 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className={`my-8 
-        rounded-full 
-        bg-linear-to-r from-gray-200 to-purple-600
+        bg-linear-to-r from-gray-600 to-purple-600
           text-white 
-          py-20 px-4 sm:px-6 lg:px-8 
+          py-10 px-4 sm:px-6 lg:px-8 
           border border-gray-500`}>
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -38,13 +37,16 @@ export default function Home() {
               <Link
                 id="fill-out-survey"
                 href="/survey"
-                className="bg-sky-500/80 p-6 rounded-lg border text-white block text-center"
+                className="bg-linear-to-r from-purple-600 to-gray-600
+          text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center"
               >
                 <span className="text-xl font-semibold mb-2">Fill out our 2 Minute Survey!</span>
               </Link>
 
               {/* Feature 2 */}
-              <button id="join-mailing-list" className="bg-sky-500/80 text-white p-6 rounded-lg border border-blue-500">
+              <button id="join-mailing-list" className="bg-linear-to-r
+               from-purple-600 to-gray-600
+              text-white  p-6 rounded-lg border-4 hover:border-green-400 ">
               
                 <span className="text-xl font-semibold mb-2">Join our Mailing List!</span>
               </button>
