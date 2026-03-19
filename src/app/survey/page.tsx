@@ -13,7 +13,7 @@ export default function SurveyPage() {
             <SurveyMarsEmbed />
           </div>
           <Link
-            href="/stage"
+            href="/"
             className="text-sky-600 hover:underline"
           >
             ← Back to home
