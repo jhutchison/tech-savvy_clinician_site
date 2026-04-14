@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 const SURVEY_MARS_SRC =
-  "https://surveymars.com/js/qembed.js?activity=7XlKogeOe&source=iframe&width=912";
+  "https://surveymars.com/js/qembed.js?activity=7XlKogeOe&source=iframe&width=1000";
 
 export default function SurveyMarsEmbed() {
   const containerRef = useRef<HTMLDivElement | null>(null);

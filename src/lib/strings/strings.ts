@@ -8,3 +8,8 @@ export const aboutUsText = "Our company was founded by experienced clinicians an
 
 export const companyName = "The Tech-Savvy Clinician";
 
+export const intakeEmail = "intake@techsavvyclinician.com";
+
+const intakeMailSubject = "Website inquiry";
+export const intakeMailtoHref = `mailto:${intakeEmail}?subject=${encodeURIComponent(intakeMailSubject)}`;
+

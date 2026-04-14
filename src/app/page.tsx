@@ -1,6 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { companyName, tagline, aboutUsText } from "@/lib/strings/strings";
+import {
+  companyName,
+  tagline,
+  aboutUsText,
+  intakeMailtoHref,
+} from "@/lib/strings/strings";
 
 export default function Home() {
   return (
@@ -30,8 +35,7 @@ export default function Home() {
         {/* Features Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-              {/* Feature 1 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Link
                 id="fill-out-survey"
                 href="/survey"
@@ -41,12 +45,14 @@ export default function Home() {
                 <span className="text-xl font-semibold mb-2">Fill out our 2 Minute Survey!</span>
               </Link>
 
-              {/* Feature 2 */}
-              {/* <button id="join-mailing-list" className="bg-linear-to-r
-               from-purple-600 to-gray-600
-              text-white  p-6 rounded-lg border-4 hover:border-green-400 ">
-                <span className="text-xl font-semibold mb-2">Join our Mailing List!</span>
-              </button> */}
+              <a
+                id="email-intake"
+                href={intakeMailtoHref}
+                className="bg-linear-to-r from-purple-600 to-gray-600
+          text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center"
+              >
+                <span className="text-xl font-semibold mb-2">Email intake</span>
+              </a>
             </div>
           </div>
         </section>
