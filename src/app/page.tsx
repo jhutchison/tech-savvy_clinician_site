@@ -46,12 +46,12 @@ export default function Home() {
               </Link>
 
               <a
-                id="email-intake"
+                id="contact-us!"
                 href={intakeMailtoHref}
                 className="bg-linear-to-r from-purple-600 to-gray-600
           text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center"
               >
-                <span className="text-xl font-semibold mb-2">Email intake</span>
+                <span className="text-xl font-semibold mb-2">Contact Us!</span>
               </a>
             </div>
           </div>
