@@ -4,7 +4,6 @@ import {
   companyName,
   tagline,
   aboutUsText,
-  intakeMailtoHref,
 } from "@/lib/strings/strings";
 
 export default function Home() {
@@ -45,14 +44,14 @@ export default function Home() {
                 <span className="text-xl font-semibold mb-2">Fill out our 2 Minute Survey!</span>
               </Link>
 
-              <a
-                id="contact-us!"
-                href={intakeMailtoHref}
+              <Link
+                id="contact-us"
+                href="/contact"
                 className="bg-linear-to-r from-purple-600 to-gray-600
           text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center"
               >
                 <span className="text-xl font-semibold mb-2">Contact Us!</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

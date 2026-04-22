@@ -72,7 +72,7 @@ export default function Navbar() {
               Services
             </Link>
             <Link 
-              href="/stage/contact" 
+              href="/contact" 
               className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50"
               onClick={() => setIsOpen(false)}
             >
