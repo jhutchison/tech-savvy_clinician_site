@@ -73,7 +73,7 @@ export async function POST(req: Request) {
     );
   }
 
-  const subject = `New contact request${name ? ` from ${name}` : ""}`;
+  const subject = `The Tech-Savvy Clinician Request${name ? ` from ${name}` : ""}`;
 
   const safeName = name ? escapeHtml(name) : "";
   const safeEmail = escapeHtml(email);
