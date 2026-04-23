@@ -82,7 +82,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-3">Contact</h1>
             <p className="text-lg md:text-xl text-white/90">
-              Tell us what you’re trying to accomplish and we’ll get back to you.
+              We'd love to hear from you!
             </p>
           </div>
         </section>
@@ -193,10 +193,6 @@ export default function ContactPage() {
                   >
                     {isSending ? "Sending…" : "Send message"}
                   </button>
-
-                  <p className="text-sm text-gray-600">
-                    Prefer email? You can still reach us via the form here (it sends server-side).
-                  </p>
                 </form>
               )}
             </div>

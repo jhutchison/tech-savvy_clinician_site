@@ -114,7 +114,7 @@ ${message}
   if (!resendRes.ok) {
     const errText = await resendRes.text().catch(() => "");
     return NextResponse.json(
-      { ok: false, error: errText, details: errText || undefined },
+      { ok: false, error: "Email send failed.", details: errText || undefined },
       { status: 502 },
     );
   }
