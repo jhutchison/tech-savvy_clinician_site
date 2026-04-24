@@ -23,6 +23,24 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
+function parseToRecipients(raw: string): { ok: true; recipients: string[] } | { ok: false; error: string } {
+  const pieces = raw
+    .split(";")
+    .map((p) => p.trim())
+    .filter(Boolean);
+
+  if (pieces.length === 0) {
+    return { ok: false, error: "CONTACT_TO_EMAIL must contain at least one email address." };
+  }
+
+  const invalid = pieces.filter((p) => !isValidEmail(p));
+  if (invalid.length > 0) {
+    return { ok: false, error: "CONTACT_TO_EMAIL contains an invalid email address." };
+  }
+
+  return { ok: true, recipients: pieces };
+}
+
 function escapeHtml(s: string): string {
   return s
     .replaceAll("&", "&amp;")
@@ -57,7 +75,7 @@ export async function POST(req: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL;
+  const toRaw = process.env.CONTACT_TO_EMAIL;
   const from = process.env.CONTACT_FROM_EMAIL;
 
   if (!apiKey) {
@@ -66,7 +84,15 @@ export async function POST(req: Request) {
       { status: 500 },
     );
   }
-  if (!to || !from) {
+  if (!toRaw || !from) {
+    return NextResponse.json(
+      { ok: false, error: "Server is missing email routing configuration." },
+      { status: 500 },
+    );
+  }
+
+  const toParsed = parseToRecipients(toRaw);
+  if (!toParsed.ok) {
     return NextResponse.json(
       { ok: false, error: "Server is missing email routing configuration." },
       { status: 500 },
@@ -102,7 +128,7 @@ ${message}
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      to: [to],
+      to: toParsed.recipients,
       from,
       subject,
       reply_to: email,
