@@ -15,9 +15,9 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link
               href="/blog"
-              className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
             >
-              Blog
+              Read Our Blog!
             </Link>
           </div>
         </div>

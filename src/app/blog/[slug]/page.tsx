@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BlogPostContent from "@/components/BlogPostContent";
 import Navbar from "@/components/Navbar";
 import { blogPosts, getBlogPost } from "@/lib/blog/posts";
 import { companyName } from "@/lib/strings/strings";
@@ -72,11 +73,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </section>
 
         <article className="py-10 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-3xl mx-auto space-y-5 text-gray-800 leading-relaxed text-lg">
-            {post.content.map((paragraph) => (
-              <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-            ))}
-          </div>
+          <BlogPostContent content={post.content} />
         </article>
       </main>
     </div>

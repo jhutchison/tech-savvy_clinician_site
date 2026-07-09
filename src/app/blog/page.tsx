@@ -7,7 +7,7 @@ import { companyName } from "@/lib/strings/strings";
 export const metadata: Metadata = {
   title: `Blog | ${companyName}`,
   description:
-    "Practical guidance on technology for clinicians—privacy, evaluation, and tools that support better care.",
+    "Browse ourwritings on technology issues relevant to clinicians.",
 };
 
 function formatDate(date: string) {
