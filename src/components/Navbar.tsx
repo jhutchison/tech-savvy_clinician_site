@@ -12,6 +12,12 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="flex items-center">
+            <Link
+              href="/"
+              className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
+            >
+              Home
+            </Link>
             {/* <Link
               href="/about"
               className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
@@ -19,10 +25,16 @@ export default function Navbar() {
               About Us
             </Link> */}
             <Link
+              href="/survey"
+              className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
+            >
+              Survey
+            </Link>
+            <Link
               href="/blog"
               className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
             >
-            Blog
+              Blog
             </Link>
           </div>
         </div>

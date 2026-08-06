@@ -34,25 +34,14 @@ export default function Home() {
         {/* Features Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Link
-                id="fill-out-survey"
-                href="/survey"
-                className="bg-linear-to-r from-purple-600 to-gray-600
-          text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center"
-              >
-                <span className="text-xl font-semibold mb-2">Fill out our 2 Minute Survey!</span>
-              </Link>
-
-              <Link
-                id="contact-us"
-                href="/contact"
-                className="bg-linear-to-r from-purple-600 to-gray-600
-          text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center"
-              >
-                <span className="text-xl font-semibold mb-2">Contact Us!</span>
-              </Link>
-            </div>
+            <Link
+              id="contact-us"
+              href="/contact"
+              className="bg-linear-to-r from-purple-600 to-gray-600
+          text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center max-w-xl mx-auto"
+            >
+              <span className="text-xl font-semibold mb-2">Contact Us!</span>
+            </Link>
           </div>
         </section>
       </main>

@@ -39,11 +39,11 @@ export type TeamMember = {
 export const aboutPageTeam: TeamMember[] = [
   {
     name: "John Hutchison",
-    bio: "A masters-level clinical social woker turned software engineer, John worked for over a decade as a software engineer, helping to buld software for major automobile compoanies, financial comapanies other large enterprises. John has returned to seeing clients and is now focused on helping clincians use software in their practices safely and effectively."
+    bio: "A masters-level clinical social woker turned software engineer, John worked for over a decade as a software engineer, helping to buld software for major automobile companies, financial companies, andother large enterprises. John has returned to seeing clients and is now focused on helping clincians use software in their practices safely and effectively."
   },
   {
-    name: "Jordan Lee",
-    bio: "An engineer who builds practical systems with privacy and reliability in mind. Jordan translates clinical needs into tools that fit how clinicians actually work.",
+    name: "Dawn Brown",
+    bio: "Kind words about Dawn go here",
   },
 ];
 
