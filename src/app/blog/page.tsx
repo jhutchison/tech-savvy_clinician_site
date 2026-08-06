@@ -33,7 +33,7 @@ export default function BlogPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-3">Blog</h1>
             <p className="text-lg md:text-xl text-white/90">
-              Practical guidance on technology for clinicians.
+              Practical guidance on tech-related issues that impact clinicians.
             </p>
           </div>
         </section>

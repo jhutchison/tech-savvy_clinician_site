@@ -47,6 +47,45 @@ export const aboutPageTeam: TeamMember[] = [
   },
 ];
 
+export const servicesPageSubtitle =
+  "Practical guidance so you can choose and use technology with confidence.";
+
+export const servicesPageIntro =
+  "Whether you are evaluating a new tool, tightening up privacy practices, or figuring out what you actually need," +
+  " we help clinicians make informed technology decisions without the sales pitch.";
+
+export type ServiceOffering = {
+  title: string;
+  body: string;
+};
+
+export const servicesOfferings: ServiceOffering[] = [
+  {
+    title: "Technology consultation",
+    body:
+      "Talk through your practice goals, current tools, and constraints." +
+      " We help you weigh options clearly—what helps, what creates risk, and what can wait.",
+  },
+  {
+    title: "Tool and vendor evaluation",
+    body:
+      "Considering a new EHR feature, telehealth platform, or practice app?" +
+      " We review usability, workflow fit, and confidentiality implications so you can decide with eyes open.",
+  },
+  {
+    title: "Privacy and data practices review",
+    body:
+      "Client confidentiality comes first. We help you understand where clinical data lives," +
+      " how it moves, and what questions to ask vendors before you commit.",
+  },
+  {
+    title: "Workflow and documentation support",
+    body:
+      "Busy clinicians need tools that reduce friction. We look at documentation and day-to-day workflows" +
+      " and suggest practical changes that save time without adding complexity.",
+  },
+];
+
 export const companyName = "The Tech-Savvy Clinician";
 
 export const initialContactEmail = "intake@techsavvyclinician.com";

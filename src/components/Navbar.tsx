@@ -19,6 +19,12 @@ export default function Navbar() {
               Home
             </Link>
             {/* <Link
+              href="/services"
+              className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
+            >
+              Services
+            </Link> */}
+            {/* <Link
               href="/about"
               className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
             >
