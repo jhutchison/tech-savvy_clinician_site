@@ -11,13 +11,18 @@ export default function Navbar() {
               {companyName}
             </Link>
           </div>
-
           <div className="flex items-center">
+            {/* <Link
+              href="/about"
+              className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
+            >
+              About Us
+            </Link> */}
             <Link
               href="/blog"
               className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
             >
-              Read Our Blog!
+            Blog
             </Link>
           </div>
         </div>
