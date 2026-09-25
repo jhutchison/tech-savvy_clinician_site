@@ -1,5 +1,8 @@
+/** Plain text, or a link embedded in a paragraph. */
+export type BlogInline = string | { text: string; url: string };
+
 export type BlogContentBlock =
-  | { type: "paragraph"; text: string }
+  | { type: "paragraph"; text: string | BlogInline[] }
   | { type: "heading"; text: string }
   | { type: "list"; items: string[] };
 
@@ -13,13 +16,205 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "is-hippa-sufficient-for-ai-in-mental-health",
+    title: "Is HIPAA Sufficient for AI in Mental Health?",
+    date: "2026-09-24",
+    excerpt:
+      "HIPAA is a starting point to protect consumer information. But due to the dynamic and emerging technology there needs to be federal regulation, states can't do it all. Until then clinicians must do their own investigation to determine the risks and benefits to protect client information.",
+    content: [
+      { type: "heading", text: "Summary" },
+      {
+        type: "paragraph",
+        text: "HIPAA is a starting point to protect consumer information. But due to the dynamic and emerging technology there needs to be federal regulation, states can't do it all. Until then clinicians must do their own investigation to determine the risks and benefits to protect client information.",
+      },
+      { type: "heading", text: "HIPAA is a Starting Point" },
+      {
+        type: "paragraph",
+        text: "Every day, I look at the latest developments in AI, particularly as they affect mental health. The pace of change can be dizzying.",
+      },
+      {
+        type: "paragraph",
+        text: 'One question I frequently hear from mental health professionals is: "How do I protect my clients\' privacy when using technology and AI?"',
+      },
+      {
+        type: "paragraph",
+        text: "My answer is: HIPAA is important, but HIPAA alone is not enough.",
+      },
+      {
+        type: "paragraph",
+        text: "HIPAA protects protected health information (PHI) when it is handled by covered entities and business associates. But not every AI tool, mental health app, wearable device, or technology company is covered by HIPAA.",
+      },
+      {
+        type: "paragraph",
+        text: [
+          "For example, consumer health information collected through apps or wearable devices may fall outside HIPAA when the company collecting it is not a HIPAA-covered entity or business associate. Other protections, such as the ",
+          {
+            text: "FTC's Health Breach Notification Rule",
+            url: "https://www.ftc.gov/business-guidance/health-breach-notification-rule",
+          },
+          ", may apply.",
+        ],
+      },
+      { type: "heading", text: "AI Regulation Is Still Evolving" },
+      {
+        type: "paragraph",
+        text: "The FDA regulates certain AI-enabled medical technologies, and its 2026 guidance addresses Clinical Decision Support Software. However, there is not one comprehensive federal framework governing all AI applications in mental health. (fda.gov)",
+      },
+      {
+        type: "paragraph",
+        text: "States are also developing their own protections. Illinois, California, New York, and others have enacted or proposed legislation addressing different aspects of AI, including mental health and AI companions. Colorado's AI legislation against algorithmic bias was challenged by xAI and a new AI Litigation Task Force created by President Trump to challenge state legislation that impedes federal AI policies. Colorado enacted a less restrictive law.",
+      },
+      {
+        type: "paragraph",
+        text: "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+      },
+      {
+        type: "paragraph",
+        text: "https://mental.jmir.org/2026/1/e96389",
+      },
+      {
+        type: "paragraph",
+        text: "https://www.justice.gov/opa/pr/justice-department-intervenes-xai-lawsuit-challenging-colorados-algorithmic-discrimination",
+      },
+      {
+        type: "paragraph",
+        text: "This means clinicians may need to consider federal law, state law, professional ethics, and the specific technology being used.",
+      },
+      { type: "heading", text: "Health Data Is Not Always HIPAA Data" },
+      {
+        type: "paragraph",
+        text: "A common misconception is that all health information is protected by HIPAA.",
+      },
+      {
+        type: "paragraph",
+        text: "It isn't.",
+      },
+      {
+        type: "paragraph",
+        text: "Health information may be collected through:",
+      },
+      {
+        type: "list",
+        items: [
+          "AI chatbots",
+          "Mental health apps",
+          "Wearables and fitness trackers",
+          "Online assessments",
+          "Wellness platforms and consumer technology",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "HIPAA-protected PHI and general health information are not necessarily the same thing.",
+      },
+      {
+        type: "paragraph",
+        text: 'Similarly, "deidentified" does not mean "risk-free." Properly deidentified information is generally no longer PHI under HIPAA, but research has demonstrated that information considered anonymous can sometimes be reidentified when combined with other information. (hhs.gov) https://techscience.org/a/2018100901/',
+      },
+      { type: "heading", text: "So, What Should Clinicians Do?" },
+      {
+        type: "paragraph",
+        text: "Before using an AI tool with client information, ask questions about the data collected:",
+      },
+      {
+        type: "list",
+        items: [
+          "What information does it collect?",
+          "Where is it stored?",
+          "How long is it retained?",
+          "Who can access it?",
+          "Is it shared or sold?",
+          "Is it used to train AI models?",
+          "Is it used for advertising or product development?",
+          "Can the information be completely deleted?",
+          "Does the vendor provide a BAA when one is required?",
+          "What happens if the company changes its privacy policy? Are providers and consumers notified?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Read the privacy policy and terms of service.",
+      },
+      {
+        type: "paragraph",
+        text: "And yes—AI can help.",
+      },
+      {
+        type: "paragraph",
+        text: "You can use AI to summarize a vendor's privacy policy or identify provisions related to data collection, retention, sharing, AI training, and deletion.",
+      },
+      {
+        type: "paragraph",
+        text: "But never upload client PHI into a consumer AI tool simply to analyze a vendor agreement. Upload the vendor agreement—not your client's therapy notes.",
+      },
+      {
+        type: "paragraph",
+        text: "And always verify AI-generated analysis against the original document. AI can make mistakes.",
+      },
+      { type: "heading", text: "HIPAA Is the Floor—Not the Ceiling" },
+      {
+        type: "paragraph",
+        text: "When evaluating AI, ask four questions:",
+      },
+      {
+        type: "list",
+        items: [
+          "Is it legal?",
+          "Is it HIPAA compliant, when HIPAA applies?",
+          "Is it ethical?",
+          "Is it clinically safe?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A tool can potentially meet HIPAA requirements and still raise concerns about bias, transparency, informed consent, confidentiality, or clinical safety.",
+      },
+      {
+        type: "paragraph",
+        text: "Our responsibility isn't to avoid technology.",
+      },
+      {
+        type: "paragraph",
+        text: "It is to understand enough to use it responsibly.",
+      },
+      { type: "heading", text: "A Tech-Savvy Clinician might ask:" },
+      {
+        type: "list",
+        items: [
+          "What does it do?",
+          "What data does it collect?",
+          "Who can access it?",
+          "How is the data used?",
+          "What laws apply?",
+          "What could go wrong?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "And most importantly:",
+      },
+      {
+        type: "paragraph",
+        text: "Could I clearly explain to my client what happens to their information?",
+      },
+      {
+        type: "paragraph",
+        text: "If the answer is no, we're not ready to use the technology.",
+      },
+      {
+        type: "paragraph",
+        text: "AI is moving quickly. Our responsibility is to move thoughtfully.",
+      },
+    ],
+  },
+  {
     slug: "can-you-delete-information-from-the-cloud",
     title: "Can you delete information from the cloud?",
     date: "2026-07-09",
     excerpt:
       "In theory it's possible to remove data from the cloud, but it's near impossible for the average user to verify that the data is no longer stored",
     content: [
-      { type: "heading", text: "Too Long; Didn't Read:" },
+      { type: "heading", text: "Summary" },
       {
         type: "paragraph",
         text: "In theory it's possible to remove data from the cloud, but it's near impossible for the average user to verify that the data is no longer stored",

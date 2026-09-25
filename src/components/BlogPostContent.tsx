@@ -1,8 +1,25 @@
-import type { BlogContentBlock } from "@/lib/blog/posts";
+import type { BlogContentBlock, BlogInline } from "@/lib/blog/posts";
 
 type BlogPostContentProps = {
   content: BlogContentBlock[];
 };
+
+function InlinePart({ part }: { part: BlogInline }) {
+  if (typeof part === "string") {
+    return <>{part}</>;
+  }
+
+  return (
+    <a
+      href={part.url}
+      className="text-purple-700 underline hover:text-purple-900"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {part.text}
+    </a>
+  );
+}
 
 export default function BlogPostContent({ content }: BlogPostContentProps) {
   return (
@@ -31,7 +48,13 @@ export default function BlogPostContent({ content }: BlogPostContentProps) {
             );
           case "paragraph":
             return (
-              <p key={`${block.type}-${index}`}>{block.text}</p>
+              <p key={`${block.type}-${index}`}>
+                {typeof block.text === "string"
+                  ? block.text
+                  : block.text.map((part, partIndex) => (
+                      <InlinePart key={partIndex} part={part} />
+                    ))}
+              </p>
             );
         }
       })}
