@@ -55,18 +55,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-gray-900">What guides us</h2>
-              <ul className="space-y-6">
-                {aboutPageValues.map((value) => (
-                  <li key={value.title}>
-                    <h3 className="text-xl font-semibold text-gray-900">{value.title}</h3>
-                    <p className="mt-2 text-gray-700 leading-relaxed">{value.body}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="/contact"

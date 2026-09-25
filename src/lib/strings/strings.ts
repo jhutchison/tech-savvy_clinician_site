@@ -2,17 +2,14 @@ export const tagline = "Empowering clinicians to make informed decisions about t
 // export const tagline = "Helping empower clinicians to make the right choices about technology- for themselves and for their clients";
 // export const tagline = "Helping empower clinicians to make informed decisions about what technology is right for themselves and for their clients";
 export const aboutUsText =
-  "Our company was founded by experienced clinicians and software engineers." +
-  " We were brought together with the goal of helping make the job of busy clinicians easier through technology" +
-  " while making sure that client confidentiality and well being are front and center.";
+  "Our company was founded by experienced clinicians with interest and experience in technology." +
+  " We came together with the goal of helping clinicians feel confortable evaluating the benefits and risks associated with using technology" +
+  " to support their practice and free up time and energy to focus on their clients.";
 
 export const aboutPageSubtitle =
-  "Clinicians and engineers working together so technology serves your practice—and your clients.";
+  "Technology-minded clinicians working to help you understand the benefits and risks of using different technologies in your practice.";
 
-export const aboutPageMission =
-  "Too often, clinical technology is built without clinicians in the room. We reverse that." +
-  " Our team pairs clinical experience with software engineering so the tools you use are practical," +
-  " trustworthy, and designed around real workflows—not just feature checklists.";
+export const aboutPageMission ="";
 
 export const aboutPageValues = [
   {
@@ -38,13 +35,23 @@ export type TeamMember = {
 
 export const aboutPageTeam: TeamMember[] = [
   {
-    name: "John Hutchison",
-    bio: "A masters-level clinical social woker turned software engineer, John worked for over a decade as a software engineer, helping to buld software for major automobile companies, financial companies, andother large enterprises. John has returned to seeing clients and is now focused on helping clincians use software in their practices safely and effectively."
+    name: "John Hutchison, LMSW",
+    bio: "A social woker turned software engineer, John worked for over a decade in technology, " 
+    +"helping to buld software for major automobile companies, financial companies, andother large enterprises. " +
+    "John has returned to seeing clients and, in addition to his clinical work, "+
+    "is now focused on helping clincians use software in their practices safely and effectively."
   },
   {
-    name: "Dawn Brown",
-    bio: "Kind words about Dawn go here",
-  },
+    name: "Dawn Brown, LMSW",
+    bio: "Dawn brings nearly 40 years of social work experience across a wide" + 
+    "range of settings, including school social work, foster care, residential and inpatient care, and private practice. "+
+    "She has extensive experience in individual, group, and family therapy and has taught graduate-level social work for 15 years, "+
+    "with a focus on ethics, theory, and clinical practice." +
+     "Dawn has completed postgraduate training focused on the intersection of mental health and artificial intelligence. "+
+     "She provides in-services across the state on AI issues relevant to mental health professionals, with a particular focus on ethical practice. "+
+     "She is passionate about helping clinicians navigate technology and AI while maintaining strong ethical standards "+
+     "and protecting client confidentiality.",
+  }
 ];
 
 export const servicesPageSubtitle =
