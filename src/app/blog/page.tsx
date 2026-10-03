@@ -27,7 +27,7 @@ export default function BlogPage() {
 
       <main className="flex-grow">
         <section
-          className="my-8 bg-linear-to-r from-gray-600 to-purple-600 text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
+          className="my-8 bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
           aria-label="Blog header"
         >
           <div className="max-w-3xl mx-auto text-center">
@@ -54,7 +54,7 @@ export default function BlogPage() {
                 <h2 className="mt-2 text-2xl font-semibold text-gray-900">
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="hover:text-purple-700 transition-colors"
+                    className="hover:ext-[var(--primary--color)]  transition-colors"
                   >
                     {post.title}
                   </Link>
@@ -62,7 +62,7 @@ export default function BlogPage() {
                 <p className="mt-3 text-gray-700 leading-relaxed">{post.excerpt}</p>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="mt-4 inline-block text-purple-700 font-medium hover:text-purple-900 transition-colors"
+                  className="mt-4 inline-block text-[var(--primary--color)] font-medium hover:text-purple-900 transition-colors"
                 >
                   Read more →
                 </Link>

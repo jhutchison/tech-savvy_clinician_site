@@ -23,7 +23,7 @@ export default function AboutPage() {
 
       <main className="flex-grow">
         <section
-          className="my-8 bg-linear-to-r from-gray-600 to-purple-600 text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
+          className="my-8 bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
           aria-label="About Us header"
         >
           <div className="max-w-3xl mx-auto text-center">
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="/contact"
-                className="bg-linear-to-r from-purple-600 to-gray-600 text-white px-5 py-3 rounded-md border-2 border-transparent hover:border-green-400 transition-colors"
+                className="bg-linear-to-r from-purple-600 to-[var(--primary--color)] text-white px-5 py-3 rounded-md border-2 border-transparent hover:border-green-400 transition-colors"
               >
                 Contact Us
               </Link>

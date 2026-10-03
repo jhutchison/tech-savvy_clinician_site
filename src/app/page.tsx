@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 import Link from "next/link";
 import {
   companyName,
@@ -13,19 +14,23 @@ export default function Home() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className={`my-8 
-        bg-linear-to-r from-gray-600 to-purple-600
-          text-white 
-          py-10 px-4 sm:px-6 lg:px-8 
-          border border-gray-500`}>
+        <section
+          className="my-8 bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white py-12 px-4 sm:px-6 lg:px-8 border border-gray-500"
+        >
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {companyName}
-            </h1>
-            <p className=" text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            <Image
+              src="/logo.png"
+              alt={companyName}
+              width={1254}
+              height={1254}
+              priority
+              className="mx-auto mb-8 h-auto w-56 sm:w-72 md:w-96"
+            />
+            <h1 className="sr-only">{companyName}</h1>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               {tagline}
             </p>
-            <p className=" text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               {aboutUsText}
             </p>
           </div>
@@ -37,7 +42,7 @@ export default function Home() {
             <Link
               id="contact-us"
               href="/contact"
-              className="bg-linear-to-r from-purple-600 to-gray-600
+              className="bg-linear-to-r from-[var(--primary--color)] to-gray-600
           text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center max-w-xl mx-auto"
             >
               <span className="text-xl font-semibold mb-2">Contact Us!</span>
