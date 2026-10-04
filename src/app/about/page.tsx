@@ -35,7 +35,7 @@ export default function AboutPage() {
         <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white" aria-label="About Us content">
           <div className="max-w-3xl mx-auto space-y-10">
             <div className="space-y-4">
-              <h2 className="text-2xl font-semibold text-gray-900">Who we are</h2>
+              <h2 className="text-2xl font-semibold text-gray-900">Our Mission</h2>
               <p className="text-lg text-gray-700 leading-relaxed">{aboutUsText}</p>
               <p className="text-lg text-gray-700 leading-relaxed">{aboutPageMission}</p>
             </div>

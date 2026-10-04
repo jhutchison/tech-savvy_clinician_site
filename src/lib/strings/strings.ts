@@ -2,9 +2,9 @@ export const tagline = "Empowering clinicians to make informed decisions about t
 // export const tagline = "Helping empower clinicians to make the right choices about technology- for themselves and for their clients";
 // export const tagline = "Helping empower clinicians to make informed decisions about what technology is right for themselves and for their clients";
 export const aboutUsText =
-  "Our company was founded by experienced clinicians with interest and experience in technology." +
-  " We came together with the goal of helping clinicians feel confortable evaluating the benefits and risks associated with using technology" +
-  " to support their practice and free up time and energy to focus on their clients.";
+  "We aim to help clinicians learn what they need to know to feel comfortable making their own decisions about the benefits and risks associated with using specific technologies (including Artificial Intelligence)." +
+  " We hope to help clinicians free up time and energy to focus on what they’re passionate about - "+
+  " helping their clients, and still sleep at night knowing that they understand how the technology works.";
 
 export const aboutPageSubtitle =
   "Technology-minded clinicians working to help you understand the benefits and risks of using different technologies in your practice.";
@@ -36,21 +36,23 @@ export type TeamMember = {
 export const aboutPageTeam: TeamMember[] = [
   {
     name: "John Hutchison, LMSW",
-    bio: "A social woker turned software engineer, John worked for over a decade in technology, " 
-    +"helping to buld software for major automobile companies, financial companies, andother large enterprises. " +
-    "John has returned to seeing clients and, in addition to his clinical work, "+
-    "is now focused on helping clincians use software in their practices safely and effectively."
+    bio: "John brings a unique combination of social work and technology experience."+
+    " After eight years as a social worker, John transitioned to software engineering,"+
+    " spending over a decade working with companies including Thomson Reuters, VMware,"+
+    " Pivotal Software, and ThoughtWorks. He has helped develop technology solutions across"+
+    " industries and now combines his clinical and technology backgrounds to help mental"+
+    " health professionals navigate technology (including AI) as it applies to clinical"+ 
+    " practice. John is currently in private practice."
   },
   {
     name: "Dawn Brown, LMSW",
-    bio: "Dawn brings nearly 40 years of social work experience across a wide" + 
-    "range of settings, including school social work, foster care, residential and inpatient care, and private practice. "+
-    "She has extensive experience in individual, group, and family therapy and has taught graduate-level social work for 15 years, "+
-    "with a focus on ethics, theory, and clinical practice." +
-     "Dawn has completed postgraduate training focused on the intersection of mental health and artificial intelligence. "+
-     "She provides in-services across the state on AI issues relevant to mental health professionals, with a particular focus on ethical practice. "+
-     "She is passionate about helping clinicians navigate technology and AI while maintaining strong ethical standards "+
-     "and protecting client confidentiality.",
+    bio: "Dawn brings nearly 40 years of social work experience across a wide range of settings,"+ 
+    " including school social work, foster care, residential and inpatient care, and private practice. She has"+
+    " taught graduate-level social work for 15 years, with a focus on ethics, theory, and clinical practice."+
+   
+    " Dawn has completed postgraduate training focused on the intersection of mental health and artificial intelligence."+
+    " She provides in-services across the state for mental health professions regarding the use of technology with ethical integrity and social justice."+
+    " She is passionate about helping clinicians navigate technology and AI while maintaining strong ethical standards and protecting client confidentiality."
   }
 ];
 
