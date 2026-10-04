@@ -4,7 +4,8 @@ export const tagline = "Empowering clinicians to make informed decisions about t
 export const aboutUsText =
   "We aim to help clinicians learn what they need to know to feel comfortable making their own decisions about the benefits and risks associated with using specific technologies (including Artificial Intelligence)." +
   " We hope to help clinicians free up time and energy to focus on what they’re passionate about - "+
-  " helping their clients, and still sleep at night knowing that they understand how the technology works.";
+  " helping their clients, while still sleeping well at night knowing that they understand how" +
+  " the technology they are using works.";
 
 export const aboutPageSubtitle =
   "Technology-minded clinicians working to help you understand the benefits and risks of using different technologies in your practice.";
