@@ -80,7 +80,7 @@ export default function ContactPage() {
           aria-label="Contact header"
         >
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-3">Contact</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-3">Get in Touch</h1>
             <p className="text-lg md:text-xl text-white/90">
               We'd love to hear from you!
             </p>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                   <div className="flex flex-wrap gap-3">
                     <button
                       type="button"
-                      className="bg-linear-to-r from-purple-600 to-[var(--primary--color)] text-white px-5 py-2 rounded-md hover:opacity-95 transition-opacity"
+                      className="bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white px-5 py-2 rounded-md hover:opacity-95 transition-opacity"
                       onClick={() => setSubmitState({ status: "idle" })}
                     >
                       Send another message
@@ -189,7 +189,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={!canSubmit}
-                    className="w-full bg-linear-to-r from-purple-600 to-[var(--primary--color)] text-white px-5 py-3 rounded-md border-2 border-transparent enabled:hover:border-green-400 disabled:opacity-60 transition-colors"
+                    className="w-full bg-linear-to-r from-[var(--primary--color)] to-gray-800 text-white px-5 py-3 rounded-md border-2 border-transparent enabled:hover:border-blue-400 disabled:opacity-60 transition-colors"
                   >
                     {isSending ? "Sending…" : "Send message"}
                   </button>

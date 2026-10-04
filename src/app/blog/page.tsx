@@ -43,7 +43,7 @@ export default function BlogPage() {
             {posts.map((post) => (
               <article
                 key={post.slug}
-                className="rounded-lg border border-gray-200 shadow-sm p-6 sm:p-8 hover:border-purple-300 transition-colors"
+                className="rounded-lg border border-gray-200 shadow-sm p-6 sm:p-8 hover:border-blue-300 transition-colors"
               >
                 <time
                   dateTime={post.date}

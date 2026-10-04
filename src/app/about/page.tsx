@@ -58,15 +58,9 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="/contact"
-                className="bg-linear-to-r from-purple-600 to-[var(--primary--color)] text-white px-5 py-3 rounded-md border-2 border-transparent hover:border-green-400 transition-colors"
+                className="bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white px-5 py-3 rounded-md border-2 border-transparent hover:border-blue-400 transition-colors"
               >
                 Contact Us
-              </Link>
-              <Link
-                href="/survey"
-                className="px-5 py-3 rounded-md border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors"
-              >
-                Take our survey
               </Link>
             </div>
           </div>

@@ -45,12 +45,6 @@ export default function Navbar() {
             >
               Blog
             </Link>
-            <Link
-              href="/survey"
-              className="text-gray-600 hover:text-gray-900 px-5 py-2 rounded-md text-medium font-medium"
-            >
-              Survey
-            </Link>
           </div>
         </div>
       </div>

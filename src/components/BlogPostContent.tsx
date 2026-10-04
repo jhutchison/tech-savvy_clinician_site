@@ -12,7 +12,7 @@ function InlinePart({ part }: { part: BlogInline }) {
   return (
     <a
       href={part.url}
-      className="text-purple-700 underline hover:text-purple-900"
+      className="text-blue-700 underline hover:text-blue-900"
       target="_blank"
       rel="noopener noreferrer"
     >

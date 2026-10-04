@@ -30,9 +30,9 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               {tagline}
             </p>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            {/* <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               {aboutUsText}
-            </p>
+            </p> */}
           </div>
         </section>
 
@@ -43,7 +43,7 @@ export default function Home() {
               id="contact-us"
               href="/contact"
               className="bg-linear-to-r from-[var(--primary--color)] to-gray-600
-          text-white p-6 rounded-lg border-4 hover:border-green-400 block text-center max-w-xl mx-auto"
+          text-white p-6 rounded-lg border-4 hover:border-blue-400 block text-center max-w-xl mx-auto"
             >
               <span className="text-xl font-semibold mb-2">Contact Us!</span>
             </Link>

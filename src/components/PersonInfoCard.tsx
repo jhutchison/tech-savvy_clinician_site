@@ -34,7 +34,7 @@ export default function PersonInfoCard({
           />
         ) : (
           <div
-            className="h-24 w-24 shrink-0 rounded-full bg-linear-to-br from-gray-600 to-purple-600 text-white flex items-center justify-center text-2xl font-semibold"
+            className="h-24 w-24 shrink-0 rounded-full bg-linear-to-br from-gray-600 to-[var(--primary--color)] text-white flex items-center justify-center text-2xl font-semibold"
             aria-hidden="true"
           >
             {initials}
