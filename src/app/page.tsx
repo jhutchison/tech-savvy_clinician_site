@@ -38,12 +38,28 @@ export default function Home() {
 
         {/* Features Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-5xl mx-auto text-center">
+            <p
+              id="upcoming-event"
+              className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-800"
+            >
+              Upcoming event: Join us for a virtual workshop presented by Core
+              Learning on December 17th 2026. Learn more{" "}
+              <Link
+                href="https://corelearninginc.com/all-workshops-%26-register/ola/services/cheap-and-easy-ways-to-make-sure-you-are-keeping-your-clients-data-safe-and-hipaa-compliant"
+                className="underline text-blue-500 hover:text-blue-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                here
+              </Link>
+              .
+            </p>
             <Link
               id="contact-us"
               href="/contact"
               className="bg-linear-to-r from-[var(--primary--color)] to-gray-600
-          text-white p-6 rounded-lg border-4 hover:border-blue-400 block text-center max-w-xl mx-auto"
+          text-white p-6 rounded-lg border-4 hover:border-blue-400 block text-center max-w-sm mx-auto mt-16"
             >
               <span className="text-xl font-semibold mb-2">Contact Us!</span>
             </Link>
