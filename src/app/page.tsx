@@ -44,14 +44,14 @@ export default function Home() {
               className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-800"
             >
               Upcoming event: Join us for a virtual workshop presented by Core
-              Learning on December 17th 2026. Learn more about the{" "}
+              Learning on December 17th 2026. Learn more about our{" "}
               <Link
                 href="https://corelearninginc.com/all-workshops-%26-register/ola/services/cheap-and-easy-ways-to-make-sure-you-are-keeping-your-clients-data-safe-and-hipaa-compliant"
                 className="underline text-[var(--primary--color)] hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2 rounded-sm"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                our workshop on using technology to improve data security and HIPAA compliance
+                workshop on using technology to improve data security and HIPAA compliance
                 <span className="sr-only"> (opens in a new tab)</span>
               </Link>
               .
