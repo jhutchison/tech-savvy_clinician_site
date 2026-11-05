@@ -51,7 +51,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                workshop about using technology to improve data security and HIPAA compliance
+                our workshop on using technology to improve data security and HIPAA compliance
                 <span className="sr-only"> (opens in a new tab)</span>
               </Link>
               .
