@@ -50,7 +50,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" tabIndex={-1}>
         <section
           className="my-8 bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
           aria-label="Post header"
@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="max-w-3xl mx-auto">
             <Link
               href="/blog"
-              className="text-white/80 hover:text-white text-sm transition-colors"
+              className="text-white/80 hover:text-white text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-600 rounded-sm"
             >
               ← Back to blog
             </Link>

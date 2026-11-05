@@ -25,7 +25,7 @@ export default function BlogPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" tabIndex={-1}>
         <section
           className="my-8 bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
           aria-label="Blog header"
@@ -54,7 +54,7 @@ export default function BlogPage() {
                 <h2 className="mt-2 text-2xl font-semibold text-gray-900">
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="hover:ext-[var(--primary--color)]  transition-colors"
+                    className="hover:text-[var(--primary--color)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2 rounded-sm"
                   >
                     {post.title}
                   </Link>
@@ -62,7 +62,8 @@ export default function BlogPage() {
                 <p className="mt-3 text-gray-700 leading-relaxed">{post.excerpt}</p>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="mt-4 inline-block text-[var(--primary--color)] font-medium hover:text-purple-900 transition-colors"
+                  className="mt-4 inline-block text-[var(--primary--color)] font-medium hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2 rounded-sm"
+                  aria-label={`Read more: ${post.title}`}
                 >
                   Read more →
                 </Link>

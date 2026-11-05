@@ -21,7 +21,7 @@ export default function AboutPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" tabIndex={-1}>
         <section
           className="my-8 bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
           aria-label="About Us header"
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="/contact"
-                className="bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white px-5 py-3 rounded-md border-2 border-transparent hover:border-blue-400 transition-colors"
+                className="bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white px-5 py-3 rounded-md border-2 border-transparent hover:border-blue-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2"
               >
                 Contact Us
               </Link>

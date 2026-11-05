@@ -18,7 +18,7 @@ export default function ServicesPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" tabIndex={-1}>
         <section
           className="my-8 bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
           aria-label="Services header"
@@ -48,13 +48,13 @@ export default function ServicesPage() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Link
                 href="/contact"
-                className="bg-linear-to-r from-var(--primary--color)] to-gray-600 text-white px-5 py-3 rounded-md border-2 border-transparent hover:border-green-400 transition-colors"
+                className="bg-linear-to-r from-[var(--primary--color)] to-gray-600 text-white px-5 py-3 rounded-md border-2 border-transparent hover:border-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2"
               >
                 Contact Us
               </Link>
               <Link
                 href="/survey"
-                className="px-5 py-3 rounded-md border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors"
+                className="px-5 py-3 rounded-md border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2"
               >
                 Take our survey
               </Link>

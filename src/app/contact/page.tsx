@@ -74,7 +74,7 @@ export default function ContactPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" tabIndex={-1}>
         <section
           className="my-8 bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white py-10 px-4 sm:px-6 lg:px-8 border border-gray-500"
           aria-label="Contact header"
@@ -91,7 +91,12 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto">
             <div className="rounded-lg border border-gray-200 shadow-sm p-6 sm:p-8">
               {submitState.status === "success" ? (
-                <div className="space-y-4">
+                <div
+                  className="space-y-4"
+                  role="status"
+                  aria-live="polite"
+                  tabIndex={-1}
+                >
                   <h2 className="text-2xl font-semibold text-gray-900">Message sent</h2>
                   <p className="text-gray-700">
                     Thanks—your message is on its way. We’ll respond as soon as we can.
@@ -99,14 +104,14 @@ export default function ContactPage() {
                   <div className="flex flex-wrap gap-3">
                     <button
                       type="button"
-                      className="bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white px-5 py-2 rounded-md hover:opacity-95 transition-opacity"
+                      className="bg-linear-to-r from-gray-600 to-[var(--primary--color)] text-white px-5 py-2 rounded-md hover:opacity-95 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2"
                       onClick={() => setSubmitState({ status: "idle" })}
                     >
                       Send another message
                     </button>
                     <Link
                       href="/"
-                      className="px-5 py-2 rounded-md border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors"
+                      className="px-5 py-2 rounded-md border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2"
                     >
                       Back to home
                     </Link>
@@ -124,7 +129,7 @@ export default function ContactPage() {
                       autoComplete="name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)]"
                       type="text"
                       maxLength={120}
                       disabled={isSending}
@@ -133,7 +138,7 @@ export default function ContactPage() {
 
                   <div>
                     <label htmlFor={emailId} className="block text-sm font-medium text-gray-900">
-                      Email <span className="text-red-600">*</span>
+                      Email <span className="text-gray-700">(required)</span>
                     </label>
                     <input
                       id={emailId}
@@ -141,10 +146,11 @@ export default function ContactPage() {
                       autoComplete="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)]"
                       type="email"
                       inputMode="email"
                       required
+                      aria-required="true"
                       maxLength={254}
                       disabled={isSending}
                     />
@@ -152,16 +158,17 @@ export default function ContactPage() {
 
                   <div>
                     <label htmlFor={messageId} className="block text-sm font-medium text-gray-900">
-                      Message <span className="text-red-600">*</span>
+                      Message <span className="text-gray-700">(required)</span>
                     </label>
                     <textarea
                       id={messageId}
                       name="message"
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)]"
                       rows={7}
                       required
+                      aria-required="true"
                       maxLength={4000}
                       disabled={isSending}
                     />
@@ -189,7 +196,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={!canSubmit}
-                    className="w-full bg-linear-to-r from-[var(--primary--color)] to-gray-800 text-white px-5 py-3 rounded-md border-2 border-transparent enabled:hover:border-blue-400 disabled:opacity-60 transition-colors"
+                    className="w-full bg-linear-to-r from-[var(--primary--color)] to-gray-800 text-white px-5 py-3 rounded-md border-2 border-transparent enabled:hover:border-blue-400 disabled:opacity-60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2"
                   >
                     {isSending ? "Sending…" : "Send message"}
                   </button>

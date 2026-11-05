@@ -12,11 +12,12 @@ function InlinePart({ part }: { part: BlogInline }) {
   return (
     <a
       href={part.url}
-      className="text-blue-700 underline hover:text-blue-900"
+      className="text-[var(--primary--color)] underline hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary--color)] focus-visible:ring-offset-2 rounded-sm"
       target="_blank"
       rel="noopener noreferrer"
     >
       {part.text}
+      <span className="sr-only"> (opens in a new tab)</span>
     </a>
   );
 }
